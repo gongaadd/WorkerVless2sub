@@ -417,7 +417,7 @@ async function getLink(重新汇总所有链接) {
 				method: 'get',
 				headers: {
 					'Accept': 'text/html,application/xhtml+xml,application/xml;',
-					'User-Agent': 'v2rayN/' + FileName + ' (WorkerVless2subb)'
+					'User-Agent': 'v2rayN/' + FileName + ' ()'
 				},
 				signal: controller.signal // 将AbortController的信号量添加到fetch请求中
 			}).then(response => response.ok ? response.text() : Promise.reject())));
@@ -1463,4 +1463,5 @@ export default {
 		}
 	}
 };
+
 
